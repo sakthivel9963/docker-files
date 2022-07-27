@@ -74,5 +74,9 @@ sudo apt install docker-compose
   ```
   The **--name** tag is optional and this allows you to give the container name.
   ```sh
-  docker run -p 3050:3050 nodejs-express-image
+  docker run -p 3050:3050 -d nodejs-express-image
+  ```
+- ### Print container log
+  ```sh
+  docker logs container_id
   ```
